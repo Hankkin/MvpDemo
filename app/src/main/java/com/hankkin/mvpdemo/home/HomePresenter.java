@@ -1,6 +1,6 @@
 package com.hankkin.mvpdemo.home;
 
-import com.hankkin.hlibrary.BasePresent;
+import com.hankkin.hlibrary.base.BasePresent;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;

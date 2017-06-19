@@ -1,4 +1,4 @@
-package com.hankkin.hlibrary;
+package com.hankkin.hlibrary.base;
 
 /**
  * Created by hankkin on 2017/3/29.

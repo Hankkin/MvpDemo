@@ -1,0 +1,45 @@
+ext{
+    android = [
+            compileSdkVersion: 25,
+            buildToolsVersion: "25.0.2",
+
+            minSdkVersion    : 16,
+            targetSdkVersion : 22,
+
+            versionCode      : 1,
+            versionName      : '1.0.0',
+
+            VSupportSdk      : '25.2.0'
+    ]
+
+    dependencies = [
+            "appcompat-v7"   : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "support-v4"     : "com.android.support:support-v4:${android["VSupportSdk"]}",
+            "design"         : "com.android.support:design:${android["VSupportSdk"]}",
+            "annotations"    : "com.android.support:support-annotations:${android["VSupportSdk"]}",
+            "recyclerview-v7": "com.android.support:recyclerview-v7:${android["VSupportSdk"]}",
+            "butterknife"    : "com.jakewharton:butterknife:8.5.1",
+            "butterknife-apt": "com.jakewharton:butterknife-compiler:8.5.1",
+            "glide"          : "com.github.bumptech.glide:glide:3.7.0",
+            "okhttp3"        : "com.squareup.okhttp3:okhttp:3.3.0",
+            "gson"           : "com.google.code.gson:gson:2.8.0",
+            "eventbus"       : "org.greenrobot:eventbus:3.0.0",
+            "xrecyclerview"  : "com.github.limedroid:ARecyclerView:v1.1.5",
+            "okhttputils"    : "com.zhy:okhttputils:2.6.2",
+            "canary-debug"   : "com.squareup.leakcanary:leakcanary-android:1.4-beta2",
+            "canary-release" : "com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2",
+            "avi-loading"    : "com.wang.avi:library:1.0.2",
+            "statusbar-utils": "com.jaeger.statusbaruitl:library:1.3.6",
+            "base-rv-helper" : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.15",
+            "zxing"          : "com.google.zxing:core:3.2.1",
+            "fastjson"       : "com.alibaba:fastjson:1.2.3",
+            "pickerimg"      : "com.github.LuckSiege.PictureSelector:picture_library:v1.5.3",
+            "banner"         : "com.youth.banner:banner:1.4.9",
+            "spinner"        : "com.jaredrummler:material-spinner:1.1.0",
+            "material-dialog": "com.afollestad.material-dialogs:core:0.9.4.5",
+            "OkGo"           : "com.lzy.net:okgo:3.0.1",
+            "Okrx"           : "com.lzy.net:okrx2:2.0.1",
+            "okserver"       : "com.lzy.net:okserver:2.0.1",
+            "readystatesoftware"       : "com.readystatesoftware.chuck:library:1.0.4"
+    ]
+}

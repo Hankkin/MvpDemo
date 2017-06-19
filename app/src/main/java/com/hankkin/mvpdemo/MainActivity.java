@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.hankkin.hlibrary.MvpActivity;
+import com.hankkin.hlibrary.base.MvpActivity;
 import com.hankkin.mvpdemo.home.HomePresenter;
 import com.hankkin.mvpdemo.home.HomeView;
 
@@ -39,11 +39,14 @@ public class MainActivity extends MvpActivity<HomeView,HomePresenter> implements
         }
     };
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initViews(Bundle savedInstanceState) {
         mTextMessage = (TextView) findViewById(R.id.message);
         btnGet = (Button) findViewById(btn_get);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
@@ -56,6 +59,11 @@ public class MainActivity extends MvpActivity<HomeView,HomePresenter> implements
                 presenter.getGankData();
             }
         });
+    }
+
+    @Override
+    protected void initData() {
+
     }
 
     @Override
@@ -79,5 +87,10 @@ public class MainActivity extends MvpActivity<HomeView,HomePresenter> implements
     @Override
     public void toast(CharSequence s) {
         toast("获取成功");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

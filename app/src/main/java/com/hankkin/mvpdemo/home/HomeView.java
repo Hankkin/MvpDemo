@@ -1,6 +1,6 @@
 package com.hankkin.mvpdemo.home;
 
-import com.hankkin.hlibrary.BaseView;
+import com.hankkin.hlibrary.base.BaseView;
 
 /**
  * Created by hankkin on 2017/6/19.
